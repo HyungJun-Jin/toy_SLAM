@@ -5,8 +5,8 @@
 
 ### 3D pose viewer
 3D coordinate viewer (KITTI dataset pose format)
-
-![](./3d_pose_viewer.gif)
+![](./img/cam0_data.png)
+![](./img/3d_pose_viewer.gif)
 
 
 ### Build 
