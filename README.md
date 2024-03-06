@@ -9,23 +9,22 @@ Pre-requisite: Eigen3, Pangolin v0.6
 
 
 ## 3D pose viewer
-
-A simple 3D coordinate viewer. Currently supports KITTI dataset pose format.
-
-
-### Demo
+3D coordinate viewer (KITTI dataset pose format)
 
 ![](./3d_pose_viewer.gif)
 
 
-### How to run (Local)
+## Build 
+Pre-requisite: Eigen3, Pangolin v0.6
+
+### Run (Local)
 
 ```
 ./build/pose_viewer ./cam0_to_world.txt
 ```
 
 
-### How to run (Docker)
+### Run (Docker)
 
 ```
 # Enable docker port for visualization
