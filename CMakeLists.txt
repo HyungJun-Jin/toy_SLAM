@@ -19,11 +19,11 @@ endif (${Pangolin_FOUND})
 
 
 # Executable
-add_executable(eigen examples/eigen.cpp)
+add_executable(eigen src/eigen.cpp)
 target_link_libraries(eigen Eigen3::Eigen)
 
-add_executable(rotations examples/rotations.cpp)
+add_executable(rotations src/rotations.cpp)
 target_link_libraries(rotations Eigen3::Eigen)
 
-add_executable(pose_viewer examples/pose_viewer.cpp)
+add_executable(pose_viewer src/pose_viewer.cpp)
 target_link_libraries(pose_viewer ${Pangolin_LIBRARIES})
