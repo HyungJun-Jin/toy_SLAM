@@ -25,7 +25,7 @@ Pre-requisite: Eigen3, Pangolin v0.6
 # Enable docker port for visualization
 xhost +local:docker
 
-# Build and run docker image
+# Build and run docker image (X11: GUI port fowarding)
 docker build . -t slam:2_2
 docker run -it --env DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix:ro slam:2_2
 
