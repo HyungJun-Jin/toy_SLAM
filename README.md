@@ -3,13 +3,13 @@
 2. Rotations (SO(3), Angle-axis, quaternions) - Using Eigen3
 
 
-## 3D pose viewer
+### 3D pose viewer
 3D coordinate viewer (KITTI dataset pose format)
 
 ![](./3d_pose_viewer.gif)
 
 
-## Build 
+### Build 
 Pre-requisite: Eigen3, Pangolin v0.6
 
 ### Run (Local)
