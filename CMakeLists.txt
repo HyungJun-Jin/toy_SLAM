@@ -18,7 +18,6 @@ endif (${Pangolin_FOUND})
 # find_package(Eigen3 REQUIRED)
 
 
-
 # Executable
 add_executable(eigen examples/eigen.cpp)
 target_link_libraries(eigen Eigen3::Eigen)
