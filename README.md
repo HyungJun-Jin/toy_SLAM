@@ -1,5 +1,5 @@
 # 3D Position and Rotation Practice 
-1. [Eigen basics](https://eigen.tuxfamily.org/dox/) (Eigen matrices and vectors)
+1. [Eigen basics](https://eigen.tuxfamily.org/dox/){:target="_blank"} (Eigen matrices and vectors)
 2. Rotations (SO(3), Angle-axis, quaternions) - Using Eigen3
 
 
