@@ -37,9 +37,9 @@ $SE(3) = \{ T=
 \ 0^T & 1
 \end{bmatrix}$
 
-↓ cam0_to_world.txt => SE(3) values ↓
+👇 cam0_to_world.txt => SE(3) values 👇
 ![](./img/cam0_data.png)
-↓ Visualize ↓
+👇 Visualize 👇
 ![](./img/3d_pose_viewer.gif)
 
 
