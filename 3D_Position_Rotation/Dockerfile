@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 ubuntu_focal:3D_Position_Rotation
+FROM --platform=linux/amd64 ubuntu:focal
 
 MAINTAINER HyungJun-Jin
 ARG DEBIAN_FRONTEND=noninteractive
@@ -89,9 +89,6 @@ RUN apt-get install -y libgoogle-glog-dev libgflags-dev libatlas-base-dev libsui
     make -j4 &&\
     make install &&\
     cd ../../
-
-
-RUN git clone https://github.com/HyungJun-Jin/toy_SLAM.git
 
 
 RUN mkdir build && cd build && \

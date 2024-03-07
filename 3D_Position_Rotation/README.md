@@ -53,7 +53,7 @@ Pre-requisite: Eigen3, Pangolin v0.6
 xhost +local:docker
 
 # Build and run docker image (X11: GUI port fowarding)
-docker build . -t ubuntu_focal:3D_Position_Rotation
+docker build . -t slam:3d_position_rotation
 docker run -it --env DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix:ro ubuntu_focal:3D_Position_Rotation
 
 # Inside docker
