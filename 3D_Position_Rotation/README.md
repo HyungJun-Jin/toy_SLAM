@@ -18,24 +18,16 @@ $ij=k, jk=i, ki=j, ji=-k, kj=-i, ik=-j$
 
 ### SE(3)
 Special Euclidean Group (3D): SO(3) + Translation($t_x, t_y, t_z$)  
-$SE(3) = \{ T=
-\begin{bmatrix}
-\ R & t \\
-\ 0^T & 1
-\end{bmatrix}
-\in \mathbb{R}^{4\times4}| R \in SO(3), t\in\mathbb{R}^3
-\}$  -> ⭐4 by 4 matrix  
+![](./img/matrix1.png) 
 
+        
 ## 3D pose viewer
 3D coordinate viewer (KITTI dataset pose format = 1camera)
 
 3D coordinates (11501 coordinates)  
 = 11501 * SE(3) Matrix  
 = 11501 * [index, R11, R12, R13, t14, R21, R22, R23, t24, R31, R32, R33, t34, 0, 0, 0, 1]  
-= 11501 * $\begin{bmatrix}
-\ R & t \\
-\ 0^T & 1
-\end{bmatrix}$
+![](./img/matrix2.png)
 
 👇 cam0_to_world.txt => SE(3) values 👇
 ![](./img/cam0_data.png)
