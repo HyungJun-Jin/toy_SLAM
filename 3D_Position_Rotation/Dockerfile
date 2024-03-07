@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 ubuntu:focal
+FROM --platform=linux/amd64 ubuntu_focal:3D_Position_Rotation
 
 MAINTAINER HyungJun-Jin
 ARG DEBIAN_FRONTEND=noninteractive
