@@ -11,7 +11,7 @@ int main(int argc, char **argv)
   if (argc == 0)
   {
     std::cout << "Please provide the path to poses.txt file as the first "
-                 "argument! `pose_viewer cam0_to_world.txt`";
+                 "argument! `pose_viewer ./data/cam0_to_world.txt`";
   }
 
   const std::string trajectory_file = std::string(argv[1]);

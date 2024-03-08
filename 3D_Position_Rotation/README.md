@@ -42,7 +42,7 @@ Pre-requisite: Eigen3, Pangolin v0.6
 ### Run (Local)
 
 ```
-./build/pose_viewer ./cam0_to_world.txt
+./build/pose_viewer ./data/cam0_to_world.txt
 ```
 
 
@@ -54,10 +54,10 @@ xhost +local:docker
 
 # Build and run docker image (X11: GUI port fowarding)
 docker build . -t slam:3d_position_rotation
-docker run -it --env DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix:ro ubuntu_focal:3D_Position_Rotation
+docker run -it --env DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix:ro -v .:/opt/3D_Position_Rotation slam:3d_position_rotation
 
 # Inside docker
 cd ./3D_Position_Rotation
-./build/pose_viewer ./cam0_to_world.txt
+./build/pose_viewer ./data/cam0_to_world.txt
 ```
 
