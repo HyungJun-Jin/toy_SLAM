@@ -89,3 +89,6 @@ RUN apt-get install -y libgoogle-glog-dev libgflags-dev libatlas-base-dev libsui
     make -j4 &&\
     make install &&\
     cd ../../
+
+
+RUN git clone https://github.com/HyungJun-Jin/toy_SLAM.git
