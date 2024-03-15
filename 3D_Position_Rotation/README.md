@@ -57,7 +57,7 @@ docker build . -t slam:3d_position_rotation
 docker run -it --env DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix:ro -v .:/opt/3D_Position_Rotation slam:3d_position_rotation
 
 # Inside docker
-cd ./3D_Position_Rotation
+cd ./toy_SLAM/3D_Position_Rotation
 ./build/pose_viewer ./data/cam0_to_world.txt
 ```
 
