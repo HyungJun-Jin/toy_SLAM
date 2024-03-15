@@ -92,8 +92,9 @@ RUN apt-get install -y libgoogle-glog-dev libgflags-dev libatlas-base-dev libsui
 
 
 
-RUN git clone https://github.com/HyungJun-Jin/toy_SLAM.git &&\
-    cd toy_SLAM/3D_Position_Rotation &&\
+RUN git clone https://github.com/HyungJun-Jin/toy_SLAM.git
+
+RUN cd toy_SLAM/3D_Position_Rotation &&\
     mkdir build && cd build && \
     cmake -GNinja ../ && \
     ninja -j4
