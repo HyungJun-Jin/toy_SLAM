@@ -30,7 +30,6 @@ RUN apt-get install build-essential -y && \
 RUN apt-get install -y cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 RUN wget https://github.com/opencv/opencv/archive/refs/tags/4.8.1.zip &&\
     unzip 4.8.1.zip &&\
-    rm -rf 4.8.1.zip &&\
     cd opencv-4.8.1 &&\
     mkdir build && cd build &&\
     cmake .. &&\
@@ -41,7 +40,6 @@ RUN wget https://github.com/opencv/opencv/archive/refs/tags/4.8.1.zip &&\
 # Eigen
 RUN wget https://gitlab.com/libeigen/eigen/-/archive/3.3.8/eigen-3.3.8.zip &&\
     unzip eigen-3.3.8.zip &&\
-    rm -rf eigen-3.3.8.zip &&\
     cd eigen-3.3.8 &&\
     mkdir build && cd build &&\
     cmake .. &&\
@@ -52,7 +50,6 @@ RUN wget https://gitlab.com/libeigen/eigen/-/archive/3.3.8/eigen-3.3.8.zip &&\
 # Sophus
 RUN wget https://github.com/strasdat/Sophus/archive/refs/tags/1.22.10.zip &&\
     unzip 1.22.10.zip &&\
-    rm -rf 1.22.10.zip &&\
     cd Sophus-1.22.10 &&\
     mkdir build && cd build &&\
     cmake .. &&\
@@ -72,7 +69,6 @@ RUN apt-get install -y mesa-utils && \
 
 RUN wget https://github.com/stevenlovegrove/Pangolin/archive/refs/tags/v0.6.zip &&\
     unzip v0.6.zip &&\
-    rm -rf v0.6.zip &&\
     cd Pangolin-0.6 &&\
     mkdir build && cd build &&\
     cmake .. &&\
@@ -87,8 +83,7 @@ RUN apt-get install -y libpcl-dev
 RUN apt-get install -y libgoogle-glog-dev libgflags-dev libatlas-base-dev libsuitesparse-dev &&\
     wget https://github.com/ceres-solver/ceres-solver/archive/refs/tags/2.1.0.zip &&\
     unzip 2.1.0.zip &&\
-    rm -rf 2.1.0.zip &&\
-    cd ceres-solver-2.1.0 && \
+    cd ceres-solver-2.1.0 &&\
     mkdir build && cd build &&\
     cmake .. &&\
     make -j4 &&\
