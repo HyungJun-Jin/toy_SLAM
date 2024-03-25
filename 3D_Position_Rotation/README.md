@@ -39,25 +39,27 @@ Special Euclidean Group (3D): SO(3) + Translation($t_x, t_y, t_z$)
 ### Build 
 Pre-requisite: Eigen3, Pangolin v0.6
 
-### Run (Local)
-
-```
-./build/pose_viewer ./data/cam0_to_world.txt
-```
-
-
 ### Run (Docker)
 
+__Prerequisite:__  Install a "slam:base" docker image from [the main page](https://github.com/HyungJun-Jin/toy_SLAM/tree/main) of this repository
 ```
 # Enable docker port for visualization
 xhost +local:docker
+# or (Once)
+echo "xhost +local:docker" >> ~/.profile 
 
-# Build and run docker image (X11: GUI port fowarding)
-docker build . -t slam:3d_position_rotation
-docker run -it --env DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix:ro -v .:/opt/3D_Position_Rotation slam:3d_position_rotation
+
+# Build docker image and Run (X11: GUI port fowarding)
+docker-compose up -d
+docker attach {container-id}
 
 # Inside docker
 cd ./toy_SLAM/3D_Position_Rotation
 ./build/pose_viewer ./data/cam0_to_world.txt
 ```
 
+### Run (Local)
+
+```
+./build/pose_viewer ./data/cam0_to_world.txt
+```

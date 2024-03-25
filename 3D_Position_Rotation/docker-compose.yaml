@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dev:
+    build:
+      context: .
+    container_name: ver1
+    stdin_open: true
+    tty: true
+    working_dir: /
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ~/.Xauthority:/root/.Xauthority:rw
+    environment:
+      - DISPLAY=$DISPLAY
+    network_mode: host
