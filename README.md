@@ -1,6 +1,6 @@
 ## RUN
 ### Dockerfile
-This is base of every toy project's docker image (saved as "slam:base")
+This is a base Docker image of every toy project's one (saved as "slam:base")
 ``` shell
 docker build . --tag slam:base --progress=plain
 ```
